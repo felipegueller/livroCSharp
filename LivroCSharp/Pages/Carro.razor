@@ -1,0 +1,58 @@
+﻿@page "/carro"
+
+<h3>Carro</h3>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Informações do carro</h5>
+
+        <p class="card-text">Marca: @marca</p>
+        <p class="card-text">Modelo: @modelo</p>
+        <p class="card-text">Ano: @ano</p>
+        <p class="card-text">Velocidade atual: @velocidade km/h</p>
+
+        <button class="btn btn-primary" @onclick="acelerar">Acelerar</button>
+        <button class="btn btn-secondary" @onclick="frear">Frear</button>
+    </div>
+</div>
+
+@code {
+    string marca = "Toyota";
+    string modelo = "Corolla Altis Premium";
+    uint ano = 2023;
+    uint velocidade;
+    uint velocidadeMaxima = 10;
+
+    void atualizarVelocidade(uint velocidade)
+    {
+        this.velocidade = velocidade;
+    }
+
+    void acelerar()
+    {
+        if (velocidade == this.velocidadeMaxima)
+        {
+            // Exibir um alerta informando que a velocidade máxima já foi atingida.
+            return;
+        }
+
+
+        uint novaVelocidade = velocidade + 5;
+
+        this.atualizarVelocidade(novaVelocidade);
+    }
+
+    void frear()
+    {
+        if (velocidade == 0)
+        {
+            // Exibir um alerta informando que o carro está parado.
+            return;
+        }
+
+        uint novaVelocidade = velocidade - 5;
+
+        this.atualizarVelocidade(novaVelocidade);
+    }
+}
+

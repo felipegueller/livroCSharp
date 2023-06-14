@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{C5BCA7B5-9499-4291-AE4C-19CC74872062}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.LivroCSharp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LivroCSharp/Pages/Conversoes.razor">
+    <Files>
+      <File FileName="LivroCSharp/Pages/Carro.razor" Line="14" Column="59" />
+      <File FileName="LivroCSharp/Pages/Metodo.razor" Line="40" Column="1" />
+      <File FileName="LivroCSharp/Pages/ConversaoExemplo.razor" Line="38" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LivroCSharp" expanded="True">
+            <Node name="LivroCSharp" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Conversoes.razor" selected="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
